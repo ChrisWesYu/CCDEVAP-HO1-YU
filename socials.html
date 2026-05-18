@@ -3,36 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christian's Page</title>
+    <title>Christian's Page - Socials</title>
 </head>
 <body>
-    
-    <table width="100%">
-        <tr>
-            <td><h1>Christian's Page</h1></td>
-            <td align="right">
-                <a href="index.html">Home</a> | 
-                <a href="me.html">About Me</a> | 
-                <a href="socials.html">Socials</a>
-            </td>
-        </tr>
-    </table>
+    <!-- SEMANTIC: Header -->
+    <header>
+        <h1>Christian's Page</h1>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="me.html">About Me</a> | 
+            <a href="socials.html">Socials</a>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- SEMANTIC: Main content -->
+    <main>
+        <section>
+            <h2>Connect With Me</h2>
+            
+            <article>
+                <h3>Facebook</h3>
+                <!-- EXTERNAL LINK with target="_blank" to open in new tab -->
+                <a href="https://www.facebook.com/christianwesley.yu" target="_blank">
+                    Visit my Facebook Profile
+                </a>
+                <p>FB: https://www.facebook.com/christianwesley.yu</p>
+            </article>
+
+            <article>
+                <h3>Instagram</h3>
+                <!-- EXTERNAL LINK -->
+                <a href="https://www.instagram.com/chriswesyu" target="_blank">
+                    Follow me on Instagram
+                </a>
+                <p>IG: @chriswesyu</p>
+            </article>
+
+            <article>
+                <h3>Discord</h3>
+                <p>Discord: <strong>dingus22</strong></p>
+                <p>Add me if you want to game or chat!</p>
+            </article>
+
+            <article>
+                <h3>GitHub</h3>
+                <!-- EXTERNAL LINK -->
+                <a href="https://github.com/ChrisWesYu" target="_blank">
+                    Check out my GitHub repositories
+                </a>
+                <p>GitHub: ChrisWesYu</p>
+            </article>
+
+          
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Quick Contact Form</h2>
+            <form action="#" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+
+                <label for="contact-email">Your Email:</label>
+                <input type="email" id="contact-email" name="contact-email" required>
+                <br><br>
+
+                <label for="platform">Preferred Platform:</label>
+                <select id="platform" name="platform">
+                    <option value="facebook">Facebook</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="discord">Discord</option>
+                    <option value="github">GitHub</option>
+                </select>
+                <br><br>
+
+                <button type="submit">Connect</button>
+            </form>
+        </section>
+    </main>
+
     <hr>
 
-    
-
+    <!-- SEMANTIC: Footer -->
     <footer>
-        <hr>
         <p>&copy; 2026 Christian's Page</p>
+        <p>
+            <a href="index.html">Back to Home</a> | 
+            <a href="me.html#contact-form">Send me a message</a>
+        </p>
     </footer>
 </body>
 </html>
-<main>
-    <section>
-        <h2>Connect With Me</h2>
-        <p>FB: https://www.facebook.com/christianwesley.yu</p>
-        <p>IG: @chriswesyu</p>
-        <p>Discord: dingus22</p>
-        <p>GitHub: ChrisWesYu</p>
-    </section>
-</main>

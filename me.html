@@ -3,121 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christian's Page</title>
+    <title>Christian's Page - About Me</title>
 </head>
 <body>
-    
-    <table width="100%">
-        <tr>
-            <td><h1>Christian's Page</h1></td>
-            <td align="right">
-                <a href="index.html">Home</a> | 
-                <a href="me.html">About Me</a> | 
-                <a href="socials.html">Socials</a>
-            </td>
-        </tr>
-    </table>
+    <!-- SEMANTIC: Header -->
+    <header>
+        <h1>Christian's Page</h1>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="me.html">About Me</a> | 
+            <a href="socials.html">Socials</a>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- SEMANTIC: Navigation for within-page links -->
+    <nav>
+        <p><strong>Quick Navigation:</strong> 
+            <a href="#about">About</a> | 
+            <a href="#funfacts">Fun Facts</a> | 
+            <a href="#goals">Goals</a> | 
+            <a href="#hobbies">Hobbies</a> | 
+            <a href="#movies">Movies</a> | 
+            <a href="#travel">Travel</a>
+        </p>
+    </nav>
+
     <hr>
 
-    
+    <!-- SEMANTIC: Main content -->
     <main>
-        <h2>Welcome!</h2>
-        
-        
-    <img src="pictures/pfp.jpg" alt="My Profile" width="300">        
-        <p>Pfp I took from Thailand</p>
-    </main>
-
-    <footer>
-        <hr>
-        <p>&copy; 2026 Christian's Page</p>
-    </footer>
-</body>
-</html>
-
-<main>
-    <section>
-        <h2>About Me</h2>
-        <p>My Name is: Christian Wesley Yu / 王育明. I come from a Fil-Chi background. I can speak basic Chinese up to HSK 4. I am currently a fourth-year inInformation Technology and what drives my passion is being able to translate my creativity into any media I like, may it be digital or physical</p>
-    </section>
-    
-    <section>
-        <h2>Fun Facts</h2>
-        <ul>
-            <li>I am currently teaching my friends mandarin</li>
-            <li>I have a tendency of disappearing  into new hobbies/niche interests and turning them into a research project</li>
-            <li>I am double jointed in my arms and I have a scar very similar to Luffy from One Piece</li>
-        </ul>
-    </section>
-    
-    <section>
-        <h2>Goals / Bucket List</h2>
-        <ol>
-            <li>Compete competitively in a sport</li>
-            <li>Join a scale model diorama competition</li>
-            <li>Travel around the world</li>
+        <!-- SEMANTIC: Section with id for within-page link -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>My Name is: <strong>Christian Wesley Yu / 王育明</strong>. I come from a Fil-Chi background. I can speak basic Chinese up to HSK 4. I am currently a fourth-year in Information Technology and what drives my passion is being able to translate my creativity into any media I like, may it be digital or physical.</p>
             
-        </ol>
-    </section>
-    
-<section>
-    <h2>Hobbies</h2>
-    <p>I like hobby hopping, essentially trying out new hobbies and see what sticks, but these are my favorites among the ones I've tried over the years:</p>
-    
-    <ul>
-        <li>
-            <strong>Badminton</strong>
-            <br>
-            <img src="pictures/badminton.jpg" alt="Badminton" width="100">
-        </li>
-        
-        <li>
-            <strong>Building model kits</strong>
-            <br>
-            <img src="pictures/gundam.jpg" alt="Gundam model" width="100">
-        </li>
-        
-        <li>
-            <strong>Reading manhwa</strong>
-            <br>
-            <img src="pictures/read.jpg" alt="Reading manhwa" width="100">
-        </li>
-    </ul>
-    
-    <p>This was supposed to be badminton related but I couldn't find any of my old videos</p>
-    
-    <video width="560" height="315" controls>
-        <source src="videos/Badminton.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-</section>
+            <figure>
+                <img src="pictures/pfp.jpg" alt="My Profile" width="300">  
+                <figcaption>Pfp I took from Thailand</figcaption>
+            </figure>
+        </section>
 
-    <section>
-        <h2>Movies</h2>
-        <p>These are the movies I have consumed this year that really resonated with me</p>
-        <ul>
-            <li>Meet the Robinsons</li>
+        <hr>
+
+        <section id="funfacts">
+            <h2>Fun Facts</h2>
+            <ul>
+                <li>I am currently teaching my friends Mandarin</li>
+                <li>I have a tendency of disappearing into new hobbies/niche interests and turning them into a research project</li>
+                <li>I am double jointed in my arms and I have a scar very similar to Luffy from One Piece</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="goals">
+            <h2>Goals / Bucket List</h2>
+            <ol>
+                <li>Compete competitively in a sport</li>
+                <li>Join a scale model diorama competition</li>
+                <li>Travel around the world</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <p>I like hobby hopping, essentially trying out new hobbies and see what sticks, but these are my favorites among the ones I've tried over the years:</p>
+            
+            <article>
+                <h3>Badminton</h3>
+                <img src="pictures/badminton.jpg" alt="Badminton" width="200">
+            </article>
+
+            <article>
+                <h3>Building model kits</h3>
+                <img src="pictures/gundam.jpg" alt="Gundam model" width="200">
+            </article>
+
+            <article>
+                <h3>Reading manhwa</h3>
+                <img src="pictures/read.jpg" alt="Reading" width="200">
+            </article>
+
+            <!-- Video section -->
+            <article>
+                <h3>Badminton Video</h3>
+                <p>This was supposed to be badminton related but I couldn't find any of my old videos/have time to record any highlights</p>
+                
+                <video width="560" height="315" controls>
+                    <source src="videos/Badminton.mp4" type="video/mp4">
+                    <source src="videos/Badminton.webm" type="video/webm">
+                    Your browser does not support the video tag. <a href="videos/Badminton.mp4">Download the video</a> instead.
+                </video>
+                <p>So this is my friend's dog</p>
+            </article>
+        </section>
+
+        <hr>
+
+        <section id="movies">
+            <h2>Movies</h2>
+            <p>These are the movies I have consumed this year that really resonated with me:</p>
+            <ul>
+                <li>Meet the Robinsons</li>
             <img src="pictures/movie1.jpeg" alt="movie1" width="100">
             <li>Chainsawman Reze Arc</li>
             <img src="pictures/movie2.jpg" alt="movie2" width="100">  
             <li>Robots</li>
-            <img src="pictures/movie3.jpg" alt="movie3" width="100">      
-        </ul>
-    </section>
+            <img src="pictures/movie3.jpg" alt="movie3" width="100">    
+            </ul>
+        </section>
 
-        <section>
-        <h2>Travel</h2>
-        <p>I really like traveling and admiring the world and its different cultures</p>
-        <ul>
-            <li>Japan</li>
-            <img src="pictures/japan.jpg" alt="japan" width="100">
-            <li>Vietnam</li>
-            <img src="pictures/vietnam.jpg" alt="vietnam" width="100">  
-            <li>Thailand</li>
-            <img src="pictures/thailand.jpg" alt="thailand" width="100">     
-              <li>Taiwan</li>
-            <img src="pictures/taiwan.jpg" alt="taiwan" width="100">       
-        </ul>
-    </section>
-</main>
+        <hr>
 
+        <section id="travel">
+            <h2>Travel</h2>
+            <p>I really like traveling and admiring the world and its different cultures:</p>
+            <ul>
+                <li>Japan</li>
+                <li>Vietnam</li>
+                <li>Thailand</li>
+                <li>Taiwan</li>
+            </ul>
+            
+            <!-- Travel images -->
+            <figure>
+                <img src="pictures/japan.jpg" alt="Japan travel" width="150">
+                <img src="pictures/vietnam.jpg" alt="Vietnam travel" width="150">
+                <img src="pictures/thailand.jpg" alt="Thailand travel" width="150">
+                <img src="pictures/taiwan.jpg" alt="Taiwan travel" width="150">
+                <figcaption>Places I've been to</figcaption>
+            </figure>
+        </section>
+
+        <hr>
+
+        <section id="contact-form">
+            <h2>Send Me a Message!!</h2>
+            <p>I will try to read if possible</p>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                    <br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                    <br><br>
+
+                    <label>How did you find my website?</label><br>
+                    <input type="radio" id="classmate" name="source" value="classmate">
+                    <label for="classmate">Classmate</label>
+                    <input type="radio" id="friend" name="source" value="friend">
+                    <label for="friend">Friend</label>
+                    <input type="radio" id="other" name="source" value="other">
+                    <label for="other">Other</label>
+                    <br><br>
+
+                    <button type="submit">Send</button>
+                    <button type="reset">Clear</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- SEMANTIC: Footer -->
+    <footer>
+        <p>&copy; 2026 Christian's Page | <a href="#top">Back to Top</a></p>
+    </footer>
+</body>
+</html>

@@ -3,47 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christian's Page</title>
+    <title>Christian's Page - Home</title>
 </head>
 <body>
-    
-    <table width="100%">
-        <tr>
-            <td><h1>Christian's Page</h1></td>
-            <td align="right">
-                <a href="index.html">Home</a> | 
-                <a href="me.html">About Me</a> | 
-                <a href="socials.html">Socials</a>
-            </td>
-        </tr>
-    </table>
-    <hr>
+    <!-- SEMANTIC: Header section -->
+    <header>
+        <h1>Christian's Page</h1>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="me.html">About Me</a> | 
+            <a href="socials.html">Socials</a>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- SEMANTIC: Main content -->
+    <main>
+        <section>
+            <h2>Welcome!</h2>
+            
+            <h2>Hello! 你好! Kamusta!</h2>
+            
+            <!-- Image -->
+            <figure>
+                <img src="pictures/profile.jpg" alt="Christian's Profile" width="300">
+                <figcaption>My profile picture from Thailand</figcaption>
+            </figure>
+            
+            <p>My Name is: <strong>Christian Wesley Yu / 王育明</strong>. I come from a Fil-Chi background. I can speak basic Chinese up to HSK 4. I am currently a fourth-year in Information Technology and what drives my passion is being able to translate my creativity into any media I like, may it be digital or physical.</p>
+            
+            <h2>And this is my website!</h2>
+            
+            <p>Feel free to explore and <a href="me.html">learn more about me</a> or <a href="socials.html">connect with me</a>!</p>
+        </section>
 
     
-    <main>
-        <h2>Welcome!</h2>
-        
-        
-        <img src="pictures/pfp.jpg" alt="My Profile" width="300">        
-        
-       
+
+        <section>
+            <h2>My alarm</h2>
+            <!-- Audio player -->
+           <audio controls>
+             <source src="audio/musicbox.m4a" type="audio/mp4">
+         <source src="audio/musicbox.mp3" type="audio/mpeg">
+             Your browser does not support the audio tag.
+            </audio>
+            <p>This is my favorite music box audio</p>
+        </section>
     </main>
 
+    <hr>
+
+    <!-- SEMANTIC: Footer -->
     <footer>
-        <hr>
         <p>&copy; 2026 Christian's Page</p>
     </footer>
 </body>
 </html>
-
-<main>
-    <section>
-        <h2>Hello! 你好! Kamusta!</h2>
-        <p>My Name is: Christian Wesley Yu / 王育明. I come from a Fil-Chi background. I can speak basic Chinese up to HSK 4. I am currently a fourth-year inInformation Technology and what drives my passion is being able to translate my creativity into any media I like, may it be digital or physical.</p>
-        
-        
-        <img src="[your-photo.jpg]" alt="My Profile" width="300">
-        
-        <p>And this is my website!</p>
-    </section>
-</main>
